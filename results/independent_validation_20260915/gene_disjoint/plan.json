@@ -1,0 +1,5 @@
+{
+  "status": "exploratory sensitivity added after the original CPTAC associations",
+  "design": "Use identical six eligible globally disjoint sets as prior composition analysis; compare same six full sets; no response outcomes; paired bootstrap of PC1 variance difference and IHC correlation difference; 2000 resamples",
+  "seed": 20260917
+}

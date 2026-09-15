@@ -1,0 +1,7 @@
+analysis_set	n	metric	contrast	difference	ci_low	ci_high	n_boot
+matched_four_50	22	pc1_variance	fixed_equal_RNA_minus_native	-0.03670199518576245	-0.10928834362136955	0.03673775638477562	2000
+matched_four_50	22	median_abs_rho	fixed_equal_RNA_minus_native	-0.046866177300959766	-0.16430023296409615	0.07805030224637603	2000
+matched_four_50	22	effective_dimensions	fixed_equal_RNA_minus_native	0.22057468009395365	-0.19396052268918085	0.6933255810620821	2000
+matched_four_100	18	pc1_variance	fixed_equal_RNA_minus_native	-0.03511746810661587	-0.12206432480762401	0.06341235142534994	2000
+matched_four_100	18	median_abs_rho	fixed_equal_RNA_minus_native	-0.059855521155830704	-0.1816544885177453	0.13797598072705008	2000
+matched_four_100	18	effective_dimensions	fixed_equal_RNA_minus_native	0.22095660113772286	-0.35904749619129633	0.7418893587524545	2000

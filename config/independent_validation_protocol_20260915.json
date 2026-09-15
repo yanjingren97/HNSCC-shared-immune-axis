@@ -1,0 +1,23 @@
+{
+  "status": "Fixed after file/metadata/coverage inspection, before new score-reference or score-response associations; not preregistration",
+  "seed": 20260915,
+  "bootstrap": 2000,
+  "scores": "Nine existing sets; ssGSEA ES, within-sample ranks; rank-standardized PCA with positive summed loadings; minimum 80% gene coverage",
+  "CPTAC": {
+    "population": "Clinical patient intersection with RNA and protein; exclude CAT metadata row",
+    "primary": "Spearman RNA PC1 versus recorded CD3_IHC_count, complete cases",
+    "secondary": "PC1 versus PTPRC protein; partial rank PC1 versus prespecified protein state panel adjusting recorded CD3 IHC",
+    "state_candidates": ["PSMB9", "TAP1", "TAP2", "IRF1", "GBP1", "IFIT1", "MX1"],
+    "state_selection": "Exclude all nine-signature overlap genes and proteins absent or measured in <80% of matched patients; require >=3 retained proteins; mean standardized protein abundance, complete cases",
+    "uncertainty": "Patient bootstrap refits ranks/PCA, panel standardization and residuals; percentile 95% CI; BH across three planned association tests",
+    "interpretation": "Orthogonal measurement association only, not ICI efficacy validation or proof of cell-intrinsic activation"
+  },
+  "GSE284162": {
+    "population": "All 12 unique baseline patients; author MPR labels; 4 yes and 8 no",
+    "preprocessing": "Sum duplicate gene symbols, remove all-zero rows, log1p CPM, ssGSEA ES",
+    "tests": ["PC1", "GZMK40", "TcellInflamedGEP18"],
+    "analysis": "AUC with higher scores predicting MPR; two-sided exact label permutation on abs(AUC-0.5), unrestricted and within platform preserving observed positive counts; BH within three tests for each permutation family",
+    "uncertainty": "2000 outcome-stratified patient bootstrap, refit outcome-blind PCA; percentile AUC CI; no fitted supervised multivariable model",
+    "limitations": "Small chemotherapy plus ICI cohort; imbalanced platform labels (1/6 versus 3/6 MPR); globally distinct patients not conclusively verified; descriptive external axis refit is not validation of a transported predictor"
+  }
+}

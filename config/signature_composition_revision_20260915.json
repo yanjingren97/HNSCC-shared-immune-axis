@@ -1,0 +1,23 @@
+{
+  "status": "exploratory revision fixed before new composition-response analyses; original cohort results already known",
+  "seed": 20260915,
+  "confidence_min": 0.5,
+  "minimum_cells": [50, 100],
+  "primary_groups": {
+    "Treg": ["Regulatory T cells", "Treg(diff)"],
+    "CD4_naive_Tcm": ["Tcm/Naive helper T cells"],
+    "CD4_effector": ["Tem/Effector helper T cells", "Tem/Effector helper T cells PD1+"],
+    "CD8_Tem_Trm": ["Tem/Trm cytotoxic T cells", "Trm cytotoxic T cells"]
+  },
+  "cd8_labels": ["Tcm/Naive cytotoxic T cells", "Tem/Temra cytotoxic T cells", "Tem/Trm cytotoxic T cells", "Trm cytotoxic T cells", "CD8a/b(entry)"],
+  "additional_T_labels": ["gamma-delta T cells", "CRTAM+ gamma-delta T cells", "Cycling gamma-delta T cells", "MAIT cells", "Follicular helper T cells", "Type 17 helper T cells", "Memory CD4+ cytotoxic T cells", "Type 1 helper T cells", "Cycling T cells", "NKT cells", "CD8a/a"],
+  "primary_exclude_mixed_lineage": true,
+  "fixed_mixture": "equal RNA contribution of four eligible groups; no fitted outcome weights",
+  "composition_only_reference": "leave-one-patient-out mean subtype CPM; observed RNA contribution weights",
+  "primary_score": "ssGSEA ES; uniform gene-set comparison; ES avoids cross-sample NES scaling",
+  "incremental_targets": ["GZMK40", "TcellInflamedGEP18"],
+  "incremental_baselines": ["Cytotoxic2", "leave-one-target-out signature PC1"],
+  "incremental_primary_metric": "continuous pathology MAE in percentage points; positive baseline minus augmented is improvement",
+  "incremental_fit": "leave-one-patient-out linear regression; train-only empirical midrank standardization and PCA; clipped predictions 0 to 100",
+  "interpretation": "No equivalence margin has clinical justification here; no claim of no meaningful benefit based on nonsignificance. No repeated search for best target."
+}

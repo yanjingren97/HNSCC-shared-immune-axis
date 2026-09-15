@@ -1,0 +1,8 @@
+{
+  "test": "state protein given CD3 IHC and PTPRC",
+  "n": 83,
+  "rho": 0.6285903500977132,
+  "ci_low": 0.4686889134704914,
+  "ci_high": 0.7536942975163416,
+  "status": "posthoc sensitivity"
+}

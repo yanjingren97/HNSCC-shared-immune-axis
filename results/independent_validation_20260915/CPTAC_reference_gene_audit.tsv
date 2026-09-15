@@ -1,0 +1,8 @@
+	gene	n	signature_overlap	included
+0	PSMB9	108	False	True
+1	TAP1	108	False	True
+2	TAP2	108	False	True
+3	IRF1	0	False	False
+4	GBP1	108	False	True
+5	IFIT1	108	False	True
+6	MX1	108	True	False

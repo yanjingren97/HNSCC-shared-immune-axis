@@ -1,0 +1,8 @@
+data/
+*.docx
+*.enl
+*.h5ad
+*.rds
+.env*
+.venv*/
+__pycache__/
