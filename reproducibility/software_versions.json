@@ -1,0 +1,39 @@
+{
+  "snapshot_date": "2026-09-18",
+  "note": "Recovered local environment metadata; no claim that current package inventory is an immutable historical lockfile. Original annotation model bytes are fingerprinted separately.",
+  ".venv": {
+    "anndata": "0.13.3.post0",
+    "matplotlib": "3.11.1",
+    "numpy": "2.5.3",
+    "pandas": "3.0.5",
+    "scikit-learn": "1.9.0",
+    "scipy": "1.18.1",
+    "gseapy": "1.1.9",
+    "python": "3.12.14"
+  },
+  ".venv-cd8-state": {
+    "anndata": "0.13.3.post0",
+    "celltypist": "1.7.1",
+    "matplotlib": "3.11.1",
+    "numba": "0.67.0",
+    "numpy": "2.5.3",
+    "pandas": "3.0.5",
+    "scanpy": "1.12.4",
+    "scikit-learn": "1.9.0",
+    "scipy": "1.18.1",
+    "gseapy": "1.1.9",
+    "python": "3.12.14"
+  },
+  ".venv-state": {
+    "anndata": "0.13.3.post0",
+    "matplotlib": "3.11.1",
+    "numba": "0.67.0",
+    "numpy": "2.5.3",
+    "pandas": "3.0.5",
+    "scanpy": "1.12.4",
+    "scikit-learn": "1.9.0",
+    "scipy": "1.18.1",
+    "gseapy": "1.1.9",
+    "python": "3.12.14"
+  }
+}

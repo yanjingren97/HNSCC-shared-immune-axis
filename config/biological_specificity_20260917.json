@@ -1,0 +1,32 @@
+{
+  "status": "Exploratory extension fixed before new specificity/null results; earlier manuscript results already known",
+  "seed": 20260917,
+  "random_replicates": 1000,
+  "bootstrap_replicates": 2000,
+  "core_cohorts": [
+    "CPTAC",
+    "GSE288199_native22",
+    "GSE288199_fixed22"
+  ],
+  "primary_sensitivity": "Exclude Shared84, which is a documented subset of Dysf238",
+  "deletion_controls": [
+    "Random deletion from all measured genes, matched per-set retained count",
+    "Delete only exclusive genes where mathematically feasible; compare the same feasible sets"
+  ],
+  "random_set_backgrounds": [
+    "All variable measurable genes excluding original signature union",
+    "Union of explicitly listed GO Biological Process 2025 immune-related terms, defined by the keyword rule stored in immune_background_definition.json; excluding original signature union. Rule chosen before null outcomes."
+  ],
+  "matching": "Nearest-neighbour randomized matching on gene mean-expression rank, SD rank and detection rate, without replacement within each set; report matching distances",
+  "overlap_null": "In addition to independent random sets, map each unique original gene to one unique matched random gene to preserve exact overlap architecture",
+  "specificity": "Target score rank versus PC1 of other scores; remove Shared84 from references except when it is the target; repeat references after deleting every target gene. Partial rank association with independent protein reference, adjusted for reference PC1 and additionally CD3/CD45. Report effect, bootstrap CI, BH within predeclared families; no TLS/exhaustion validity claim without appropriate reference",
+  "references": [
+    "CD3_IHC",
+    "PTPRC_protein",
+    "existing disjoint IFN/antigen-processing protein panel"
+  ],
+  "single_cell": "Patient unit; selection audit 22 versus 5 excluded; technical covariates and equal-cell repeated downsampling if raw counts available. Immune-selected data cannot validate malignant/stromal contributions",
+  "independent_replication": "Search for external HNSCC RNA plus histological/protein references; do not label an internal split independent validation",
+  "clinical": "Secondary only; reuse existing training-fold intercept-only LOPO predictions if present; no new optimized signatures",
+  "clarification": "Background wording clarified after execution; actual input rule and gene pool unchanged."
+}

@@ -1,0 +1,15 @@
+{
+  "status": "Frozen after inspecting data dictionary and before any RNA-protein association in independent cohorts",
+  "candidate": "Waas et al 2024 Nature Communications 10.1038/s41467-024-55203-z, author cohort Supplementary Data 5",
+  "target": "Unweighted ssGSEA IFNG6, same six genes and enrichment weight 0.25; require all six genes",
+  "protein_panel": ["PSMB9", "TAP1", "TAP2", "GBP1", "IFIT1"],
+  "primary_reference": "All five original proteins; z-standardize each across paired patients then unweighted mean, no imputation, no replacement proteins",
+  "adjustment": "All seven other target-gene-disjoint non-derived scores plus CD45 protein and CD3E protein if available. CD3E protein is an assay-adapted proxy, not equivalent to original stromal CD3 IHC",
+  "selection": "Unique matching author tumour patient IDs, no outcomes used; >=80 percent coverage of remaining reference genes, minimum two; all five proteins and abundance markers must be present, complete-case n at least 40",
+  "mapping": "Author protein accession-to-Ensembl mapping and GENCODE v33 gene annotations; strip Ensembl versions; duplicate mappings collapsed by mean on deposited scale and reported",
+  "processing": "Author tumour-cellularity-adjusted CPM and log2 protein intensities used as deposited; no further response or cellularity fitting",
+  "tests": "One primary partial rank correlation with two-sided approximate t test using actual design rank and 2000 patient-bootstrap refits; exploratory unadjusted and other-score-only results labelled separately",
+  "fallback": "If original five-protein panel or target/adjustment coverage fails, report feasibility failure; do not select a reduced panel after looking at associations",
+  "spatial_candidate": "GSE288406 lacks PSMB9, TAP1 and GBP1 among deposited protein labels; original five-protein panel cannot be reproduced; no association analysis planned",
+  "seed": 20260922
+}

@@ -1,0 +1,51 @@
+{
+  "paired_n": 85,
+  "RNA_gene_n": 24109,
+  "protein_gene_n": 3827,
+  "missing_proteins": [
+    "CD3E"
+  ],
+  "reference_coverage": [
+    {
+      "reference": "IFNG6",
+      "total": 6,
+      "measured": 5
+    },
+    {
+      "reference": "GZMK40",
+      "total": 40,
+      "measured": 33
+    },
+    {
+      "reference": "CYT2",
+      "total": 2,
+      "measured": 2
+    },
+    {
+      "reference": "EXH5",
+      "total": 5,
+      "measured": 4
+    },
+    {
+      "reference": "TLS9",
+      "total": 9,
+      "measured": 8
+    },
+    {
+      "reference": "GEP18",
+      "total": 15,
+      "measured": 15
+    },
+    {
+      "reference": "Korea30",
+      "total": 29,
+      "measured": 19
+    },
+    {
+      "reference": "Dysf238",
+      "total": 237,
+      "measured": 212
+    }
+  ],
+  "status": "Failed frozen feasibility gate; no association tested"
+}

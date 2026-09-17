@@ -1,0 +1,11 @@
+{
+  "status": "Fixed after data retrieval but before reading matched associations",
+  "cohort": "TCGA-HNSC",
+  "reference": "Published DNA-methylation-derived leukocyte fraction from Thorsson et al 2018 GDC PanImmune archive",
+  "purpose": "Independent measurement modality for immune abundance, not histology, TLS architecture, functional exhaustion or immunotherapy response",
+  "selection": "Primary tumour RNA sample type 01; one RNA sample per 12-character TCGA patient barcode, lexicographically first if duplicated. Match methylation primary tumour sample; mean repeated aliquot leukocyte estimates if multiple for same patient. No outcome-based exclusion",
+  "tests": "PC1 all nine and excluding Shared84 against methylation leukocyte fraction; patient bootstrap 2000 with ranks and PCA refit; BH across these two tests. Individual scores descriptive, with BH across eight non-derived sets",
+  "coverage": "Report every set; retain 80 percent measured coverage gate. No ad hoc symbol aliases",
+  "independence": "Different TCGA and prospective CPTAC project membership and public identifiers; not a personal-identity linkage audit",
+  "seed": 20260919
+}

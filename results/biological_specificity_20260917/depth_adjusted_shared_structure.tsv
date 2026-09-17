@@ -1,0 +1,7 @@
+cohort	adjustment	n	unadjusted_PC1	residual_rank_PC1	note
+GSE288199_native22	UMI	22	0.657599350506982	0.5835217597952826	Descriptive sensitivity; correlated technical measures can also reflect biology
+GSE288199_native22	UMI_and_genes	22	0.657599350506982	0.5625693657593425	Descriptive sensitivity; correlated technical measures can also reflect biology
+GSE288199_native22	UMI_genes_cells	22	0.657599350506982	0.5912601136585656	Descriptive sensitivity; correlated technical measures can also reflect biology
+GSE288199_fixed22	UMI	22	0.6208973553212196	0.593414411643654	Descriptive sensitivity; correlated technical measures can also reflect biology
+GSE288199_fixed22	UMI_and_genes	22	0.6208973553212196	0.5836971932816455	Descriptive sensitivity; correlated technical measures can also reflect biology
+GSE288199_fixed22	UMI_genes_cells	22	0.6208973553212196	0.600307667493014	Descriptive sensitivity; correlated technical measures can also reflect biology

@@ -1,0 +1,18 @@
+{
+  "status": "Exploratory extension fixed before lineage score outcomes",
+  "source": "GSE103322 Puram et al 2017",
+  "selection": "Deposited primary tumour cells only (Lymph node=0); author-defined malignant/nonmalignant annotations; unknown cells excluded; patient ID from HN/HNSCC numeric prefix",
+  "lineages": [
+    "T cells",
+    "B cells",
+    "Myeloid",
+    "Malignant",
+    "Stromal"
+  ],
+  "mapping": "Myeloid pools macrophage, dendritic and mast; stromal pools fibroblast, endothelial, myocyte; strip leading hyphen in Fibroblast label",
+  "processing": "Invert deposited log2(TPM/10+1); mean TPM per patient-lineage; transform log1p for ssGSEA. This is a TPM-derived aggregate, not raw-count pseudobulk and not true tissue RNA abundance",
+  "minimum_cells": 10,
+  "analysis": "Descriptive patient-lineage profiles, patient-centered score heatmap; fixed five-lineage mixture only if at least eight patients have >=10 cells in all five; otherwise report feasibility failure without relaxing threshold",
+  "limitation": "Captured cell fractions are affected by dissociation and sampling and are not tissue histological fractions; no functional-state or TLS truth supplied",
+  "patient_identity_exclusion": "109 combo-labelled cells without a numeric patient prefix excluded before expression scoring; no inferred patient assignment"
+}

@@ -1,0 +1,28 @@
+reference	signature	overlap	note
+CD3_IHC	GZMK40		CD3 subunits listed conservatively; protein/IHC is a distinct modality even if encoding transcript overlaps
+CD3_IHC	CYT2		CD3 subunits listed conservatively; protein/IHC is a distinct modality even if encoding transcript overlaps
+CD3_IHC	EXH5		CD3 subunits listed conservatively; protein/IHC is a distinct modality even if encoding transcript overlaps
+CD3_IHC	IFNG6		CD3 subunits listed conservatively; protein/IHC is a distinct modality even if encoding transcript overlaps
+CD3_IHC	TLS9		CD3 subunits listed conservatively; protein/IHC is a distinct modality even if encoding transcript overlaps
+CD3_IHC	GEP18		CD3 subunits listed conservatively; protein/IHC is a distinct modality even if encoding transcript overlaps
+CD3_IHC	Korea30	CD3G	CD3 subunits listed conservatively; protein/IHC is a distinct modality even if encoding transcript overlaps
+CD3_IHC	Dysf238		CD3 subunits listed conservatively; protein/IHC is a distinct modality even if encoding transcript overlaps
+CD3_IHC	Shared84		CD3 subunits listed conservatively; protein/IHC is a distinct modality even if encoding transcript overlaps
+CD45_protein	GZMK40		CD3 subunits listed conservatively; protein/IHC is a distinct modality even if encoding transcript overlaps
+CD45_protein	CYT2		CD3 subunits listed conservatively; protein/IHC is a distinct modality even if encoding transcript overlaps
+CD45_protein	EXH5		CD3 subunits listed conservatively; protein/IHC is a distinct modality even if encoding transcript overlaps
+CD45_protein	IFNG6		CD3 subunits listed conservatively; protein/IHC is a distinct modality even if encoding transcript overlaps
+CD45_protein	TLS9		CD3 subunits listed conservatively; protein/IHC is a distinct modality even if encoding transcript overlaps
+CD45_protein	GEP18		CD3 subunits listed conservatively; protein/IHC is a distinct modality even if encoding transcript overlaps
+CD45_protein	Korea30		CD3 subunits listed conservatively; protein/IHC is a distinct modality even if encoding transcript overlaps
+CD45_protein	Dysf238		CD3 subunits listed conservatively; protein/IHC is a distinct modality even if encoding transcript overlaps
+CD45_protein	Shared84		CD3 subunits listed conservatively; protein/IHC is a distinct modality even if encoding transcript overlaps
+IFN_protein	GZMK40		CD3 subunits listed conservatively; protein/IHC is a distinct modality even if encoding transcript overlaps
+IFN_protein	CYT2		CD3 subunits listed conservatively; protein/IHC is a distinct modality even if encoding transcript overlaps
+IFN_protein	EXH5		CD3 subunits listed conservatively; protein/IHC is a distinct modality even if encoding transcript overlaps
+IFN_protein	IFNG6		CD3 subunits listed conservatively; protein/IHC is a distinct modality even if encoding transcript overlaps
+IFN_protein	TLS9		CD3 subunits listed conservatively; protein/IHC is a distinct modality even if encoding transcript overlaps
+IFN_protein	GEP18		CD3 subunits listed conservatively; protein/IHC is a distinct modality even if encoding transcript overlaps
+IFN_protein	Korea30		CD3 subunits listed conservatively; protein/IHC is a distinct modality even if encoding transcript overlaps
+IFN_protein	Dysf238		CD3 subunits listed conservatively; protein/IHC is a distinct modality even if encoding transcript overlaps
+IFN_protein	Shared84		CD3 subunits listed conservatively; protein/IHC is a distinct modality even if encoding transcript overlaps

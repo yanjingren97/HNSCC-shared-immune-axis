@@ -1,0 +1,38 @@
+[
+  {
+    "file": "GSE284162_family.soft.gz",
+    "url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE284nnn/GSE284162/soft/GSE284162_family.soft.gz",
+    "bytes": 4666,
+    "sha256": "36366e13f8e83ba0977bbcdeac81846e113e0e76bd3ae1ab3930937d96be055d"
+  },
+  {
+    "file": "GSE284162_raw_counts.xlsx",
+    "url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE284nnn/GSE284162/suppl/GSE284162_raw_counts.xlsx",
+    "bytes": 1650688,
+    "sha256": "3b32b065fd38f878f2550ceb07bfa9006f6360b0122026dbe6c00f0548ad0c82"
+  },
+  {
+    "file": "HS_CPTAC_HNSCC_CLI.tsi",
+    "url": "https://www.linkedomics.org/data_download/CPTAC-HNSCC/HS_CPTAC_HNSCC_CLI.tsi",
+    "bytes": 52611,
+    "sha256": "4e08aaf959ca52e61c2fedcbce68489117a80f7fc5d4bb4a6b0f16c79b66e35e"
+  },
+  {
+    "file": "HS_CPTAC_HNSCC_microRNA_log2_Tumor.cct",
+    "url": "https://www.linkedomics.org/data_download/CPTAC-HNSCC/HS_CPTAC_HNSCC_microRNA_log2_Tumor.cct",
+    "bytes": 2595276,
+    "sha256": "de68db6dd939b2b3b51f12995dce0995daf54101b02fe7c27c7be8809c793e1c"
+  },
+  {
+    "file": "HS_CPTAC_HNSCC_Proteomics_TMT_Gene_level_Tumor.cct",
+    "url": "https://www.linkedomics.org/data_download/CPTAC-HNSCC/HS_CPTAC_HNSCC_Proteomics_TMT_Gene_level_Tumor.cct",
+    "bytes": 17158525,
+    "sha256": "9d129c81795f0760c4625f5d5303bf8b3cfa2136dd069f9a0959d4467091a6ae"
+  },
+  {
+    "file": "HS_CPTAC_HNSCC_RNAseq_RSEM_UQ_log2_Tumor.cct",
+    "url": "https://www.linkedomics.org/data_download/CPTAC-HNSCC/HS_CPTAC_HNSCC_RNAseq_RSEM_UQ_log2_Tumor.cct",
+    "bytes": 18613044,
+    "sha256": "7f8265646a91da31003f5569c1dcc40899a533abba9ee0e53ccc24978cb9e922"
+  }
+]

@@ -1,0 +1,20 @@
+[
+  {
+    "file": "TCGA_leukocyte_methylation.tsv",
+    "url": "https://api.gdc.cancer.gov/data/6f75c9d7-5134-4ed1-b8f3-72856c98a4e8",
+    "bytes": 560473,
+    "sha256": "5a8268caedbf8dc98a75be0528d583238d7355761d9fc746e42002f223a982d9"
+  },
+  {
+    "file": "TCGA_HNSC_HiSeqV2.gz",
+    "url": "https://tcga.xenahubs.net/download/TCGA.HNSC.sampleMap/HiSeqV2.gz",
+    "bytes": 30432155,
+    "sha256": "ed2b083b327cc1ccb1274b017a9eb1b40ac28fc63b7942b31448e4a6885a596a"
+  },
+  {
+    "file": "TCGA_HNSC_HiSeqV2.json",
+    "url": "https://tcga.xenahubs.net/download/TCGA.HNSC.sampleMap/HiSeqV2.json",
+    "bytes": 2620,
+    "sha256": "98860180c760201238dd480adb0a14bd3672b5f340666c3b0c8c9e497a6e0a11"
+  }
+]

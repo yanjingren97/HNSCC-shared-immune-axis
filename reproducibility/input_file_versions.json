@@ -1,0 +1,62 @@
+[
+  {
+    "file": "data/external/specificity_20260917/GO_Biological_Process_2025.gmt",
+    "bytes": 1355235,
+    "sha256": "0fc02458765cfce6c9348dce9f7a9397c6caf7c09ba318f468135d7ac60342ee"
+  },
+  {
+    "file": "data/external/specificity_20260917/TCGA_HNSC_HiSeqV2.gz",
+    "bytes": 30432155,
+    "sha256": "ed2b083b327cc1ccb1274b017a9eb1b40ac28fc63b7942b31448e4a6885a596a"
+  },
+  {
+    "file": "data/external/specificity_20260917/TCGA_leukocyte_methylation.tsv",
+    "bytes": 560473,
+    "sha256": "5a8268caedbf8dc98a75be0528d583238d7355761d9fc746e42002f223a982d9"
+  },
+  {
+    "file": "data/external/signature_validation_20260915/HS_CPTAC_HNSCC_RNAseq_RSEM_UQ_log2_Tumor.cct",
+    "bytes": 18613044,
+    "sha256": "7f8265646a91da31003f5569c1dcc40899a533abba9ee0e53ccc24978cb9e922"
+  },
+  {
+    "file": "data/external/signature_validation_20260915/HS_CPTAC_HNSCC_Proteomics_TMT_Gene_level_Tumor.cct",
+    "bytes": 17158525,
+    "sha256": "9d129c81795f0760c4625f5d5303bf8b3cfa2136dd069f9a0959d4467091a6ae"
+  },
+  {
+    "file": "data/external/signature_validation_20260915/HS_CPTAC_HNSCC_CLI.tsi",
+    "bytes": 52611,
+    "sha256": "4e08aaf959ca52e61c2fedcbce68489117a80f7fc5d4bb4a6b0f16c79b66e35e"
+  },
+  {
+    "file": "data/external/ifng6_stability_20260918/41467_2024_55203_MOESM7_ESM.xlsx",
+    "bytes": 36907165,
+    "sha256": "0a56724ba10831e9a002c7c33e614f631f0325cabb26c86034417aab35d784a5"
+  },
+  {
+    "file": "data/external/ifng6_stability_20260918/gencode.v33.annotation.gtf.gz",
+    "bytes": 43292934,
+    "sha256": "4e8afc75f90821668b0a8f45a33c31a792b4b4f754621d76ad9e50b0492a3a89"
+  },
+  {
+    "file": "models/celltypist/Immune_All_Low.pkl",
+    "bytes": 2824990,
+    "sha256": "290874d35dac039d4c9218c343fde4aac1077709b72a331ce7266f6828c36502"
+  },
+  {
+    "file": "models/celltypist/Immune_All_High.pkl",
+    "bytes": 1070426,
+    "sha256": "a715fec36c2c421f7c4e31cf4cb4bea883eedab7fd7b20a4b76f091c22660448"
+  },
+  {
+    "file": "results/signature_revision_20260915/composition/matched_four_50_native_four_logCPM.tsv.gz",
+    "bytes": 3198437,
+    "sha256": "e8a5e89e808ef251b731917092d2245dfe925eaeaeaf11dccfb5a911cefe80b2"
+  },
+  {
+    "file": "results/signature_revision_20260915/composition/matched_four_50_fixed_equal_RNA_four_logCPM.tsv.gz",
+    "bytes": 3789174,
+    "sha256": "fd91a083ebe03e1e59620617844b36945ddcd05d86db438278f09ffb018678ba"
+  }
+]

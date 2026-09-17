@@ -1,0 +1,19 @@
+target	design	n	reference_sets	in_sample_R2	interpretation
+GZMK40	other_PC1	108	7	0.900242661147428	Descriptive rank variance explained, not cross-validated prediction
+GZMK40	target_gene_disjoint_PC1	108	7	0.8870985828777775	Descriptive rank variance explained, not cross-validated prediction
+CYT2	other_PC1	108	7	0.8072031900034176	Descriptive rank variance explained, not cross-validated prediction
+CYT2	target_gene_disjoint_PC1	108	7	0.8020419245764723	Descriptive rank variance explained, not cross-validated prediction
+EXH5	other_PC1	108	7	0.9225004045677563	Descriptive rank variance explained, not cross-validated prediction
+EXH5	target_gene_disjoint_PC1	108	7	0.9147527956275991	Descriptive rank variance explained, not cross-validated prediction
+IFNG6	other_PC1	108	7	0.7542042965165239	Descriptive rank variance explained, not cross-validated prediction
+IFNG6	target_gene_disjoint_PC1	108	7	0.7366530141397208	Descriptive rank variance explained, not cross-validated prediction
+TLS9	other_PC1	108	7	0.7066320936358064	Descriptive rank variance explained, not cross-validated prediction
+TLS9	target_gene_disjoint_PC1	108	7	0.7005229549639866	Descriptive rank variance explained, not cross-validated prediction
+GEP18	other_PC1	108	7	0.9425934405516266	Descriptive rank variance explained, not cross-validated prediction
+GEP18	target_gene_disjoint_PC1	108	7	0.930215298936097	Descriptive rank variance explained, not cross-validated prediction
+Korea30	other_PC1	108	7	0.9222509288031516	Descriptive rank variance explained, not cross-validated prediction
+Korea30	target_gene_disjoint_PC1	108	6	0.887157165018224	Descriptive rank variance explained, not cross-validated prediction
+Dysf238	other_PC1	108	7	0.8750582366285575	Descriptive rank variance explained, not cross-validated prediction
+Dysf238	target_gene_disjoint_PC1	108	5	0.836687774279309	Descriptive rank variance explained, not cross-validated prediction
+Shared84	other_PC1	108	8	0.8632336713298185	Descriptive rank variance explained, not cross-validated prediction
+Shared84	target_gene_disjoint_PC1	108	7	0.831652634197164	Descriptive rank variance explained, not cross-validated prediction

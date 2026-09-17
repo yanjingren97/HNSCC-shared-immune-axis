@@ -1,0 +1,13 @@
+{
+  "date": "2026-09-18",
+  "status": "Follow-up diagnostics after 17 September results; no model selection",
+  "primary": "Original five-protein panel and joint adjustment for all seven other target-gene-disjoint non-derived scores plus CD3/CD45",
+  "diagnostics": [
+    "standardized rank design condition number and rank",
+    "all adjustment correlations",
+    "delete each of 83 complete patients and refit ranks and protein standardization",
+    "individual proteins and leave-one-protein-out composites with 2000 patient bootstrap resamples"
+  ],
+  "BH": "five single-protein tests and five deletion tests are separate descriptive families",
+  "eight_set_framework": "Chosen after provenance audit and first extension; nine-set results retained as sensitivity"
+}
