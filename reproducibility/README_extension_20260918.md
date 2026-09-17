@@ -10,7 +10,7 @@ The following are analysis entry points, not a claim that the repository is a on
 
 1. Original inputs: `acquire_independent_validation_data.py`, `analyze_independent_validation.py`, `build_signature_composition_pseudobulk.py`, `analyze_signature_composition.py` (follow the base repository README for source GEO files and annotation models).
 2. Gene provenance: `build_specificity_provenance.py` and the fixed signature catalog.
-3. Shared controls: `run_biological_nulls.py`, followed by the BH calculation in `finalize_specificity_outputs.py`; `run_equal_cell_specificity.py` and `complete_technical_audit.py` for sampling/selection.
+3. Shared controls: `run_biological_nulls.py`, followed by the BH calculation in `complete_technical_audit.py`; `run_equal_cell_specificity.py` and `complete_technical_audit.py` for sampling/selection.
 4. Conditional protein associations: `run_specific_components.py`, then `check_specificity_sensitivity.py`.
 5. TCGA abundance: `download_specificity_replication.py`, then `run_specificity_replication.py`.
 6. Follow-up diagnostics: `diagnose_ifng6_20260918.py`; revised eight-set framework: `eight_set_framework_20260918.py`.
