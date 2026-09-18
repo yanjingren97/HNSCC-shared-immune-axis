@@ -32,3 +32,7 @@ Plot inputs are the existing null-replicate and equal-cell-replicate tables, eig
 - Conditional protein associations: `all_other_scores_sensitivity.tsv` in that directory, with the eight-target BH family. CYT2 q=0.056875; IFNG6 q=0.006327. Pointwise bootstrap CIs and BH tests serve different inferential roles
 
 The eight-score technical recalculation was an exploratory final consistency check, not an original prespecified analysis. It changes the framework of Fig. 3c and its matching table, not the preceding clinical or protein models. IFNG6 remains an internally supported but independently unreplicated finding. Full file checksums are in `reproducibility/PACKAGE_SHA256.tsv` (excluding the checksum file itself). The fixed GitHub commit used by the manuscript is recorded in the submission's verification report; no DOI is claimed for this commit-based release.
+
+## Journal document alignment
+
+Essential methods are in the main manuscript; the supplementary PDF contains the nine tables followed by four figures. Detailed [analysis history](reproducibility/ANALYSIS_HISTORY_20260919.md) remains in this code archive.
