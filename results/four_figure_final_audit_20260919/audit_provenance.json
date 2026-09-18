@@ -1,0 +1,33 @@
+{
+  "purpose": "Verify six-set deletion baseline from expression and make technical sensitivity use the existing eight-score axis; no target selection or new clinical modelling",
+  "inputs": [
+    {
+      "file": "results/ifng6_stability_20260918/CPTAC_eight_scores.tsv",
+      "bytes": 17224,
+      "sha256": "6cf12ceb4d2d2222ed514f58184cc50c2aabff28db30025cab644e0b7be5c5a2"
+    },
+    {
+      "file": "results/ifng6_stability_20260918/GSE288199_native22_eight_scores.tsv",
+      "bytes": 3529,
+      "sha256": "9a58cbaa56cc0b95469d12f87de4466a42feb65337d8581e6066e447cb623eea"
+    },
+    {
+      "file": "results/ifng6_stability_20260918/GSE288199_fixed22_eight_scores.tsv",
+      "bytes": 3527,
+      "sha256": "66ed6363502a492c6a05512b48150496571c725bfd2f82f34ef4b925b7907766"
+    },
+    {
+      "file": "results/biological_specificity_20260917/single_cell_technical_covariates.tsv",
+      "bytes": 2224,
+      "sha256": "35f07bb37806e5c178619de30da21154de9250f286f799da204665a4169afaba"
+    }
+  ],
+  "six_eight_audit": "six_vs_eight_PC1_audit.tsv",
+  "technical_associations": "eight_score_technical_associations.tsv",
+  "technical_BH_family": "Eight descriptive tests: four covariates in each of two nested mixtures; not independent replication",
+  "software": {
+    "numpy": "2.5.2",
+    "pandas": "3.0.5"
+  },
+  "analyses": "Exploratory eight-score technical recalculation performed during final consistency audit on 19 September 2026"
+}

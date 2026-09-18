@@ -1,47 +1,34 @@
-# HNSCC shared immune-expression signal
+# HNSCC immune gene-set interpretation: final four-figure version
 
-Analysis code and aggregate results supporting *Distinct immune gene sets capture a shared transcriptional signal in HNSCC*.
+Version: four-figure-final-20260919. The matching submission archive is `Supplementary_Analysis_Code_20260919.zip`. This release contains the four-figure plotting script, eight-score analysis code, the final six-versus-eight baseline audit, eight-score technical associations, and aggregate outputs. Earlier versions are retained as labelled history. No manuscript, raw expression matrix, patient identifier, patient-level score table or clinical record is redistributed.
 
-## Scope
+## What changed in the final consistency audit
 
-This research snapshot includes nine fixed gene sets, analysis configurations, patient-level analysis code, and aggregate outputs for T-cell composition controls, gene-overlap sensitivity, incremental response prediction, CPTAC biological references, and GSE284162 response discrimination. The manuscript, raw expression matrices, patient-level scores/outcomes, patient decoding tables, and private correspondence are not distributed.
+The CPTAC eight-score PC1 is 0.8867705481393798; the six eligible full-score PC1 is 0.8870807959432174, and the same six exclusive-score PC1 is 0.8032222112052435. The first two both round to 88.7%, but are distinct values. `six_vs_eight_PC1_audit.tsv` records recomputation from expression and lists the six eligible gene sets. Fig. 3c now uses the same eight-score framework as panels a/b. The original nine-score technical sensitivity remains archived. Fig. 4a displays all eight BH q values; bootstrap confidence intervals are pointwise and are not multiplicity-adjusted. No clinical prediction model or IFNG6 conditioning model was changed.
 
-## Main outputs
+## Reproduction
 
-| Analysis | File |
-|---|---|
-| 22- and 18-patient composition sensitivity | `results/signature_revision_20260915/composition/redundancy_metrics.tsv` and `paired_structure_changes.tsv` |
-| Absolute baseline and augmented LOPO MAE, differences and CIs | `results/signature_revision_20260915/incremental/incremental_MAE.tsv` |
-| Three planned CPTAC associations, raw and BH-adjusted p values | `results/independent_validation_20260915/CPTAC_associations.tsv` |
-| External unrestricted and platform-restricted permutations | `results/independent_validation_20260915/GSE284162_response_associations.tsv` |
-| CPTAC gene-overlap sensitivity | `results/independent_validation_20260915/gene_disjoint/` |
+Use the source-data acquisition and upstream run order in [the original README](reproducibility/README_base_before_final_20260919.md) and [the extension guide](reproducibility/README_extension_20260918.md). Input-file hashes, source URLs, gene catalogs and environment metadata are under `reproducibility/` and `config/`. Run scripts from this repository root. This is not a one-command pipeline; the public aggregate archive is not a substitute for source expression and annotation data.
 
-MAE units are percentage points; improvement = baseline MAE minus augmented-model MAE. All 10 improvement confidence intervals include zero. The CD3-only partial correlation (0.750) is distinct from the exploratory dual-adjusted correlation (0.629). Shared score structure is not evidence of clinical predictive utility or a cell-intrinsic mechanism. Uniform ssGSEA does not reconstruct the original assay-specific predictors. Small samples and incompletely established cross-study patient independence limit inference. Configurations are analysis records, not prospective registration.
+After reconstructing the upstream expression/score/reference matrices:
 
-## Reproduction and data access
-
-The aggregate tables can be inspected without downloading patient data. Full recomputation requires source expression matrices, patient annotations and outcomes at the paths specified in the scripts. These inputs are deliberately not bundled; this is not a self-contained patient-data release. Source studies and processed data:
-
-- [GSE288199](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE288199): 27 prediction patients; nested composition subsets of 22 and 18.
-- [GSE286827](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE286827): 26 prediction patients.
-- [GSE296954](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE296954): 10 prediction patients; source cohort excluded for GZMK40 incremental evaluation.
-- [CPTAC-HNSCC](https://www.linkedomics.org/data_download/CPTAC-HNSCC/): 108 matched patients, 83 with CD3 IHC; biological reference, not immunotherapy-response validation.
-- [GSE284162](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE284162): 12 pretreatment chemotherapy–immunotherapy samples, four author-labelled MPR.
-
-Use a scientific Python environment with numpy, pandas, scipy, scikit-learn, threadpoolctl and GSEApy 1.1.9. Raw single-cell preprocessing additionally uses scanpy, anndata, celltypist, scrublet, h5py and rdata. These are dependency names, not a verified lockfile.
-
-After obtaining and preparing the inputs, run from the repository root:
-
-```sh
-python scripts/build_signature_composition_pseudobulk.py
-python scripts/analyze_signature_composition.py
-python scripts/check_signature_composition_robustness.py
-python scripts/evaluate_signature_incremental_value.py
-python scripts/acquire_independent_validation_data.py
-python scripts/analyze_independent_validation.py
-python scripts/check_CPTAC_gene_disjoint_reference.py
+```
+python scripts/eight_set_framework_20260918.py
+python scripts/audit_four_figure_final_20260919.py
+python scripts/plot_four_figure_final_20260919.py --output-dir output/final_four_figures
 ```
 
-The composition builder depends on previously generated cell annotations; see its input paths and the annotation scripts. Incremental prediction depends on the original analytical score/outcome table. Some historical scripts retain local input conventions and require configuration before use. Acquisition scripts download public files and may need working source servers. No analyses were refitted for this publication snapshot.
+The first script computes eight-score shared structure, six-set deletion controls, and paired composition results. The audit script independently reconstructs the six/eight baselines and scores, then computes the eight technical correlations and their explicit eight-test BH family. It also emits the three-test deletion BH results without changing their raw tests. The plotting script produces all four main figures and patient-deletion Supplementary Fig. S2 as PNG, PDF, SVG and 600-dpi compressed TIFF. It rebuilds Fig. 1 from data and does not copy a prior desktop figure.
 
-`SHA256SUMS.tsv` records the exact public files. This repository does not assign a license to third-party data or gene signatures.
+Plot inputs are the existing null-replicate and equal-cell-replicate tables, eight-score correlations/references, TCGA matched plot data, joint conditional-association outputs and protein/patient-deletion outputs; Fig. 3c reads `results/four_figure_final_audit_20260919/eight_score_technical_associations.tsv`. Intermediate patient-level files needed for Fig. 1 are regenerated locally by the documented upstream scripts and deliberately excluded from this archive. Model-deletion distributions are regenerated by the diagnostic script. No claim is made that a reader can rerun patient-level analyses from the aggregate tables alone.
+
+## Included final outputs and statistical families
+
+- `results/four_figure_final_audit_20260919/six_vs_eight_PC1_audit.tsv`: exact baselines, eligible sets and recomputation checks
+- `eight_score_technical_associations.tsv` in the same directory: four covariates in each of two mixtures; n=22, raw p and BH q across eight exploratory tests
+- `eight_set_deletion_summary_audited.tsv`: raw p and BH q across the three deletion comparisons
+- `figures/` under that directory: all four final main figures and Supplementary Fig. S2 as vector SVG outputs
+- Original random controls: `results/biological_specificity_20260917/null_summary.tsv`, with BH q across all 30 tests
+- Conditional protein associations: `all_other_scores_sensitivity.tsv` in that directory, with the eight-target BH family. CYT2 q=0.056875; IFNG6 q=0.006327. Pointwise bootstrap CIs and BH tests serve different inferential roles
+
+The eight-score technical recalculation was an exploratory final consistency check, not an original prespecified analysis. It changes the framework of Fig. 3c and its matching table, not the preceding clinical or protein models. IFNG6 remains an internally supported but independently unreplicated finding. Full file checksums are in `reproducibility/PACKAGE_SHA256.tsv` (excluding the checksum file itself). The fixed GitHub commit used by the manuscript is recorded in the submission's verification report; no DOI is claimed for this commit-based release.
